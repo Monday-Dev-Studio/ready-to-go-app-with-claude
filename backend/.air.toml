@@ -4,6 +4,9 @@
   include_ext = ["go"]
   exclude_dir = ["tmp", "vendor"]
   delay = 1000
+  # Poll-based watching required for Docker volumes on Windows
+  poll = true
+  poll_interval = 1000
 
 [log]
   time = true

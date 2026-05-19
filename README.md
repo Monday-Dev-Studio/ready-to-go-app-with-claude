@@ -163,6 +163,34 @@ Open your browser and go to: **http://localhost:3000**
 
 ---
 
+## Windows Users — Important Setup
+
+Before running Docker on Windows, make sure:
+
+1. **Docker Desktop is using WSL2** (not Hyper-V)
+   - Open Docker Desktop → Settings → General → check "Use the WSL 2 based engine"
+
+2. **Run commands in PowerShell or Windows Terminal** (not Command Prompt)
+
+3. **Clone using Git for Windows** with LF line endings:
+   ```powershell
+   git config --global core.autocrlf false
+   git clone https://github.com/Monday-Dev-Studio/ready-to-go-app-with-claude.git
+   ```
+   > If you already cloned, run `git rm --cached -r .` then `git reset --hard` inside the folder to fix line endings.
+
+4. **Copy the env file:**
+   ```powershell
+   Copy-Item .env.example .env
+   ```
+
+5. Then run normally:
+   ```powershell
+   docker compose up --build
+   ```
+
+---
+
 ## How to Stop the App
 
 Press `Ctrl + C` in the terminal where Docker is running.
