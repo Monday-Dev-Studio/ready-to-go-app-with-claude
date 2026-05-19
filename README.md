@@ -51,11 +51,9 @@ Docker runs your application without you needing to install Go, Node.js, or Post
 Open your terminal (Mac: search "Terminal", Windows: search "Command Prompt" or "PowerShell") and run:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/ready-to-go-app-with-claude.git
+git clone https://github.com/Monday-Dev-Studio/ready-to-go-app-with-claude.git
 cd ready-to-go-app-with-claude
 ```
-
-> Replace `YOUR-USERNAME` with the actual GitHub username where this repo lives.
 
 ---
 
