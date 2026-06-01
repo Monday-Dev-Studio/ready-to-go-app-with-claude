@@ -1,0 +1,5 @@
+# Force LF line endings in containers (prevents CRLF issues on Windows)
+* text=auto eol=lf
+*.sh text eol=lf
+*.toml text eol=lf
+Dockerfile* text eol=lf
